@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@master
       - name: Install python3
         uses: actions/setup-python@master
+        with:
+          python-version: 3.7
       - name: Install packages
         run: |
           pip3 install requests
